@@ -1,0 +1,158 @@
+header {
+  background-color: #f2f2f2;
+  padding: 1px;
+}
+
+header img {
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;    
+}
+
+nav ul li a {
+  color: #ff6347;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  color: #ff6347;
+
+}
+
+.cart span {
+  
+  color: #ff6347;
+  padding: 5px 10px;
+  border-radius: 20%;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* Main */
+main {
+  padding: 0.1px;
+  text-align: center;
+}
+
+
+
+
+
+.product-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.product-list li {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-list li h3 {
+  margin-top: 0;
+}
+
+.product-list li img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Responsive Features */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  
+  .cart {
+    margin: 0 auto;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cart {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 0;
+  }
+}
+
+
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-media li {
+  margin: 0 5px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
